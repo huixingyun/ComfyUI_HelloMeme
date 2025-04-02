@@ -25,12 +25,12 @@ cur_dir = osp.dirname(osp.abspath(__file__))
 #     os.system(f'{sys.executable} -m pip install {missing_params}')
     # subprocess.check_call([python, '-m', 'pip', 'install', missing_params], stdout=subprocess.DEVNULL)
 
-try:
-    from huggingface_hub import login
-    # Model read permission
-    login(token='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')
-except:
-    print("login error!")
+# try:
+#     from huggingface_hub import login
+#     # Model read permission
+#     login(token='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')
+# except:
+#     print("login error!")
 
 import numpy as np
 import cv2
